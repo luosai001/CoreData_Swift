@@ -3,7 +3,7 @@
 //  swiftdemo
 //
 //  Created by luosai19910103@163.com on 15/9/28.
-//  Copyright © 2015年 wuyouyunche. All rights reserved.
+//  Copyright © 2015年 . All rights reserved.
 //
 
 import UIKit
@@ -39,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        CoreDataManager.coreDataManager.saveContext()
     }
 
 
