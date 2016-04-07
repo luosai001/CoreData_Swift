@@ -8,8 +8,10 @@
 
 import UIKit
 import CoreData
-class CoreDataManager: NSObject {
-    static let coreDataManager :CoreDataManager = CoreDataManager()
+class CoreDataManager:NSObject {
+    
+    static  let coreDataManager :CoreDataManager = CoreDataManager()
+    
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.pixolity.ios.coredata" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
